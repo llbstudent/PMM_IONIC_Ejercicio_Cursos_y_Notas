@@ -1,0 +1,25 @@
+<div class="card card-block">
+    <!--Directiva personalizada Testing-->
+    <div [ngClass]="assignClasses()">
+        <h4 class="card-title"> {{ joke.setup }} </h4>
+
+        <p class="card-text" [hidden]="joke.hide"> {{ joke.punchline }} </p>
+        <a (click)="joke.toggle()" class="btn btn-warning"><b>Show Me</b></a>
+        <a (click)="deleteJoke()" class="btn btn-warning"><b>Delete Joke</b></a>
+    </div>
+
+    <HR/>
+
+    <div>
+        <h5>CHANGE VIEW</h5>
+        <label>
+        <input type="checkbox" (change)="changeBck()" />
+        Background
+      </label>
+        <br/>
+        <label>
+        <input type="checkbox" (change)="changeFont()" />
+        Font-Size (Answer)
+      </label>
+    </div>
+</div>

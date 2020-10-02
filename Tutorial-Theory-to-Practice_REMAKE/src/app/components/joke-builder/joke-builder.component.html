@@ -1,0 +1,13 @@
+<div class="card card-block">
+    <h3>GENERATE YOUR JOKES/RIDDLES</h3>
+    <input type="text" placeholder="Your Joke/Riddle" #setup>
+    <br />
+    <br />
+    <input type="text" placeholder="Your Answer" #punchline>
+    <br/>
+    <hr/>
+    <button type="button" class="btn btn-warning" (click)="makeAJoke(setup.value , punchline.value)">
+    <b>Ready</b>
+  </button>
+
+</div>

@@ -1,0 +1,2 @@
+<app-broma-componente *ngFor="let joke of jokes" [joke]="joke" (jokeRemove)="removeJoke($event)"></app-broma-componente>
+<app-joke-form (jokeCreated)="addJoke($event)"></app-joke-form>

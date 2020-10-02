@@ -1,0 +1,12 @@
+<div>
+    <h1>Crear Broma</h1>
+    <div>
+        <input type="text" placeholder="Introduce setup" #setup>
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Introduce punchline" #punchline>
+    </div>
+    <button type="button" (click)="createJoke(setup.value,punchline.value)">
+      Generar
+    </button>
+</div>

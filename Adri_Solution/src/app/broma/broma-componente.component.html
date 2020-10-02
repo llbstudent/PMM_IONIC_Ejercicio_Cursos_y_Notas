@@ -1,0 +1,8 @@
+<div>
+    <h1>BROMA</h1>
+    <p>{{joke.setup}}</p>
+    <p class="bg-primary text-white" [hidden]="joke.hide">{{joke.punchline}}</p>
+    <a (click)="joke.toggle()">OCULTAR/MOSTRAR</a>
+    <br/>
+    <button type="button" (click)="knowJoke()">Borrar</button>
+</div>

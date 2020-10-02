@@ -1,0 +1,5 @@
+<!--Componenet epara generar nuestras propias bromas-->
+<app-joke-builder (myOwnJoke)="addJoke($event)"></app-joke-builder>
+
+<!--Componente bromas-->
+<joke *ngFor="let j of jokes" [joke]="j" (jokeRemove)="removeJoke($event)"></joke>
